@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Заявки пользователей</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+
+
+    <table>
+        <tr><th>Имя пользователя</th><th>Номер телефона</th></tr>
+        <!--ряд с ячейками заголовков-->
+        {% for el in usr %}
+        <tr><td>{{ el.username }}</td><td>{{ el.phone }}</td></tr> <!--ряд с ячейками тела таблицы-->
+    </table>
+
+
+    {% endfor %}
+</div>
+
+{% endblock %}

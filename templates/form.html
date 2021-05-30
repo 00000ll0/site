@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Запись</title>
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h2>Как забронировать игру</h2>
+    <p>Для того, чтобы записаться на квест, оставьте небольшую заявку, мы свяжемся с вами и обсудим ваши желания
+    <br>Помните, что чем раньше вы записываетесь, тем больше возможности выбора даты и времени
+    </p>
+    <form method="post">
+        <input type="text" class="form-control" name="username" id="username" placeholder="Введите свое имя"><br>
+        <input type="text" class="form-control" name="phone" id="phone"  placeholder="Введите свой номер телефона"><br>
+
+        <button class="btn-success" type="submit">Оставить заявку</button>
+    </form>
+
+</div>
+
+{% endblock %}
